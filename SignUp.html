@@ -1,0 +1,262 @@
+<html>
+    <head>
+
+        <link rel="stylesheet" href="LoginPage.css">
+        <script src="https://kit.fontawesome.com/f84a89f0ab.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        
+        <div class="wrapper">
+            <div class="form-box login">
+                <h2> Registration </h2>
+                <form action="LoginPage.html" method="post">
+                    <div class="input-box" >
+                        <span class="icon">
+                            <ion-icon name="person-circle-outline"></ion-icon>
+                        </span>
+                        <input type="text" required name="username">
+                        <label> User Name </label>
+                    </div>
+                    <div class="input-box" >
+                        <span class="icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </span>
+                        <input type="email" id="email" required name="email">
+                        <label> Email </label>
+                    </div>
+                    <div class="input-box" >
+                        <span class="icon">
+                            <ion-icon name="lock-closed"></ion-icon>  
+                        </span>
+                        <input type="password" id="password" required name="password">
+                        <label> Password </label>
+                    </div>
+                    <div class="gend" >
+
+                        <span class="icon">
+                            <ion-icon name="gender-outline"></ion-icon>
+                        </span>
+                        <label for="email" class="gend-title">Gender</label>
+                        <div class="gend-cate">
+                            <input type="radio" required name="gender" value="m" id="male">
+                            <label for="male" class="radio-inline"> Male </label>
+                            <input type="radio" required name="gender" value="f" id="female">
+                            <label for="female" class="radio-inline"> Female </label>
+                        </div>
+                    
+                    </div>
+                    <div class="remember-forgot">
+                        <label> <input type="checkbox">I agree to the terms and conditions</label>
+                    </div>
+                    <button type="submit" class="btn" onclick="signup()">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account ? <a href="LoginPage.html"
+                        class="login-link"> Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script>
+            // Define a variable to hold the user information
+            var user = {};
+
+            // Function to handle the signup button click
+            function signup() {
+            // Get the input values from the form
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            // Save the input values in the user object
+            user.email = email;
+            user.password = password;
+
+            // Store the user object in local storage
+            localStorage.setItem("user", JSON.stringify(user));
+
+            // Redirect to the login page
+            window.location.href = "LoginPage.html";
+            }
+            
+        </script>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: url('images/mypic.jpeg') no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .wrapper {
+                position: relative;
+                width: 400px;
+                height: 450px;
+                background: transparent;
+                border: 2px solid rgba(225, 225, 225, .5);
+                border-radius: 20px;
+                backdrop-filter: blur(20px);
+                box-shadow: 0 0 30px #41a11b(0, 0, 0, .5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+
+            }
+
+            .wrapper.active{
+                height: 450px;
+            }
+
+            .wrapper.form-box {
+                width: 100%;
+                padding: 40px;
+            }
+
+           
+
+            .wrapper .form-box.register{
+                position: fixed;
+                
+            }
+
+
+            .form-box h2 {
+                font-size: 2em;
+                color: black;
+                text-align: center;
+            }
+
+            .input-box{
+                position: relative;
+                width: 100%;
+                height: 30px;
+                border-bottom: 2px solid black;
+                margin: 30px 0;
+            }
+            .gend{
+                text-align: left;
+            }
+            .gend .gend-title{
+                font-size: 17px;
+                font-weight: 500;
+                text-align: center;
+                position: absolute;
+                top: 58%;
+                left: 5px;
+                
+                
+            }
+            .gend .gend-cate{
+                display: flex;
+                width: 80%;
+                margin: 14px 0;
+                justify-content: space-between;
+                margin-bottom: 30px;
+            }
+            .gend .gend-cate input{
+                accent-color: black;
+            }
+            .input-box label{
+                position: absolute;
+                top: 50%;
+                left: 5px;
+                transform: translateY(-50%);
+                font-size: 1em;
+                color: black;
+                font-weight: 500;
+                pointer-events: none;
+                transition: .5s;
+            }
+
+            .input-box input:focus~label,
+            .input-box input:valid~label{
+                top: -5px;
+            }
+
+            .input-box input{
+                width: 100%;
+                height: 100%;
+                background: transparent;
+                border:none;
+                outline:none;
+                font-size: 1em;
+                color: black;
+                font-weight: 600;
+                padding: 0 35px 0 5px;
+            }
+
+            .input-box .icon{
+                position: absolute;
+                right: 8px;
+                font-size: 1.2em;
+                color: #3f413f;
+                line-height: 57px;
+            }
+
+            .remember-forgot {
+                font-size: .9em;
+                color: black;
+                font-weight: 500;
+                margin: -15px 0 15px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .remember-forgot label input {
+                accent-color: black;
+                margin-right: 3px;
+            }
+
+            .remember-forgot a {
+                color: black;
+                text-decoration: none ;
+            }
+
+            .remember-forgot a:hover{
+                text-decoration: underline;
+            }
+
+            .btn {
+                width: 100%;
+                height: 45px;
+                background: #41a11b;
+                border: none;
+                outline: none;
+                border-radius: 6px;
+                cursor: pointer;
+                font-size: 1em;
+                color: #fff;
+                font-weight: 500;
+            }
+
+            .login-register {
+                font-size: .9em;
+                color: black;
+                text-align: center;
+                font-weight: 500;
+                margin: 25px 0 10px;
+            }
+
+            .login-register p a {
+                color: #41a11b;
+                text-decoration: none;
+                font-weight: 600;
+            }
+
+            .login-register p a:hover{
+                text-decoration: underline;
+            }
+
+
+        </style>
+
+
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    </body>
+</html>

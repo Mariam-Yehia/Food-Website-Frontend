@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="lunch.css">
+	    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+        <script src="https://kit.fontawesome.com/f84a89f0ab.js" crossorigin="anonymous"></script>
+    
+    
+    </head>
+    <body>
+        <header class="header">
+                                        
+            <nav >
+                
+                <a href="HomePage.html" class="logo">
+                    <img src="images/Screenshot (560).png">
+                </a>
+                <form>
+                    <input type="search" placeholder="Search Here.." id="search">
+                    <label for="search" class="fas fa-search"></label>
+                </form>
+    
+                <div class="icons">
+                    
+                    <a href="LovedPage.html">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                    <div class="shopping">
+                        <i class="fas fa-cart-shopping"></i>
+                        <span class="quantity">0</span>
+    
+                    </div>
+                    <a href="CartPage.html">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    
+                </div>
+    
+                
+            </nav>  
+            
+                                                  
+            <nav class="hed2">
+                <div class="navi"> 
+                    
+                    <ul>
+                        <div class="Menubar">
+                            <a>
+                                <i class="fa-solid fa-bars"></i>
+                            </a>
+                        </div> 
+                        <li><a href="HomePage.html"> Home </a></li>
+                        <li><a href="RecipesPage.html"> Recipes </a><i class="fa fa-angle-down"></i>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="breakfastPage.html">Breakfast</a></li>
+                                    <li><a href="LunchPage.html">Lunch</a></li>
+                                    <li><a href="DinnerPage.html">Dinner</a></li>
+                                    <li><a href="DrinksPage.html">Drinks</a></li>
+    
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="ContactUsPage.html"> Contact </a></li>
+                        <li><a href="AboutUsPage.html"> About Us </a></li>
+                        <li><a href="LoginPage.html"> Login </a></li>
+                        <li><a href="OrderPage.html"> Order Now </a></li>
+    
+                    </ul>     
+                </div>
+            </nav>
+        </header>
+
+        <section id="Home">
+
+            <div class="main">
+
+                <div class="main_text">
+                    <h1>Get Fresh<span>Food</span><br>in a Easy Way</h1>
+                </div>
+    
+                <div class="main_image">
+                    <img src="images/lunch.jpeg">
+                </div>
+    
+            </div>
+            <p>
+                Lunch is considered to be the most important meal of the day.
+                Without a lunch break at work, in school, or even on vacation, we may not have the energy to tackle what the day throws at us.
+                When people you greatly admire appear to be thinking deep thoughts, they probably are thinking about lunch.
+            </p>
+
+        </section>
+
+        <div class="lunch" id="lunch">
+            <h1>Our<span>lunch</span></h1>
+    
+            <div class="lunch_box">
+                <div class="lunch_card">
+    
+                    <div class="lunch_image">
+                        <img src="images/soup.jpg">
+                    </div>
+    
+                    <div class="small_card">
+                        <Button onclick="Toggle1()" id="btnh1" class="btn"><i class="fa-solid fa-heart"></i></Button>
+                    </div>
+                    <script>
+                        var btnvar1 = document.getElementById('btnh1');
+            
+                        function Toggle1(){
+                                if (btnvar1.style.color =="saddlebrown") {
+                                    btnvar1.style.color = "white"
+                                }
+                                else{
+                                    btnvar1.style.color = "saddlebrown"
+                                }
+                        }
+            
+                    </script>
+    
+                    <div class="lunch_info">
+                        <h2> Carrot & tahini soup </h2>
+                        <p>
+                            Ideal for a light lunch or starter, this healthy, colourful soup is a tasty blend of chickpeas, carrots and tahini.
+                            Top with a scattering of fried chickpeas to serve
+                        </p>
+                        <div class="lunch_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <a href="carrot soup.html" class="lunch_btn">show recipie</a>
+                    </div>
+    
+                </div> 
+
+                <div class="lunch_card">
+    
+                    <div class="lunch_image">
+                        <img src="images/tuna.jpg">
+                    </div>
+    
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+    
+                    <div class="lunch_info">
+                        <h2> Lentil & tuna salad </h2>
+                        <p>
+                            Throw together this easy, no-cook lentil and tuna salad for a speedy and healthy lunch or supper.
+                            It takes just 15 minutes to make – ideal for busy days
+                        </p>
+                        <div class="lunch_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </div>
+                        <a href="tuna salad.html" class="lunch_btn">show recipie</a>
+                    </div>
+    
+                </div> 
+
+                <div class="lunch_card">
+    
+                    <div class="lunch_image">
+                        <img src="images/chicken.jpg">
+                    </div>
+    
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+    
+                    <div class="lunch_info">
+                        <h2> Classic roast chicken & gravy </h2>
+                        <p>
+                            What more can we say? The classic roast chicken is something everyone should know and can always save the day
+                        </p>
+                        <div class="lunch_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <a href="roast chicken.html" class="lunch_btn">show recipie</a>
+                    </div>
+    
+                </div> 
+
+                <div class="lunch_card">
+    
+                    <div class="lunch_image">
+                        <img src="images/roast.jpg">
+                    </div>
+    
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+    
+                    <div class="lunch_info">
+                        <h2> Healthy roast dinner </h2>
+                        <p>
+                            Cook a healthy, low-fat version of roast beef for two, made with lean,
+                            juicy steak and roasted veg, plus gravy on the side
+                        </p>
+                        <div class="lunch_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <a href="roast dinner.html" class="lunch_btn">show recipie</a>
+                    </div>
+    
+                </div> 
+
+                <div class="lunch_card">
+    
+                    <div class="lunch_image">
+                        <img src="images/salad.jpg">
+                    </div>
+    
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+    
+                    <div class="lunch_info">
+                        <h2> Vegan salad bowl </h2>
+                        <p>
+                            Whip up an easy vegan salad, with beans, radish, pickled cabbage and couscous.
+                            Bursting with flavour, it makes a satisfying dinner or lunch on the go
+                        </p>
+                        <div class="lunch_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <a href="vegan salad.html" class="lunch_btn">show recipie</a>
+                    </div>
+    
+                </div> 
+
+                <div class="lunch_card">
+    
+                    <div class="lunch_image">
+                        <img src="images/biryani.jpg">
+                    </div>
+    
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+    
+                    <div class="lunch_info">
+                        <h2> Chicken biryani pilau </h2>
+                        <p>
+                            Easy and cheap to recreate at home, students won’t need to order takeaways ever again!
+                        </p>
+                        <div class="lunch_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <a href="chicken biryani.html" class="lunch_btn">show recipie</a>
+                    </div>
+    
+                </div> 
+
+                <div class="lunch_card">
+    
+                    <div class="lunch_image">
+                        <img src="images/casio.jpg">
+                    </div>
+    
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+    
+                    <div class="lunch_info">
+                        <h2> Cacio e pepe </h2>
+                        <p>
+                            Whip up a simple cacio e pepe for a speedy lunch. With four simple ingredients – spaghetti, pepper, parmesan and butter – this is a storecupboard favourite
+                        </p>
+                        <div class="lunch_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <a href="cacio.html" class="lunch_btn">show recipie</a>
+                    </div>
+    
+                </div> 
+
+                <div class="lunch_card">
+    
+                    <div class="lunch_image">
+                        <img src="images/patties.jpg">
+                    </div>
+    
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+    
+                    <div class="lunch_info">
+                        <h2> patties with gochujang mayo </h2>
+                        <p>
+                            Filled roasties, veg, stuffing and meats, they make a great brunch on Boxing Day
+                        </p>
+                        <div class="lunch_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <a href="gochujang.html" class="lunch_btn">show recipie</a>
+                    </div>
+    
+                </div> 
+
+                <div class="lunch_card">
+    
+                    <div class="lunch_image">
+                        <img src="images/turkey.jpg">
+                    </div>
+    
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+    
+                    <div class="lunch_info">
+                        <h2> Turkey tikka masala </h2>
+                        <p>
+                            Want to turn your leftover turkey into a whole new dish?
+                            This tasty turkey tikka masala is for you
+                        </p>
+                        <div class="lunch_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <a href="turkey tikka.html" class="lunch_btn">show recipie</a>
+                    </div>
+    
+                </div> 
+
+                <div class="lunch_card">
+    
+                    <div class="lunch_image">
+                        <img src="images/smoky.jpg">
+                    </div>
+    
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+    
+                    <div class="lunch_info">
+                        <h2> Smoky chickpea herbs & yogurt</h2>
+                        <p>
+                            Add a flavoured stock pot to give a subtle kick to this smoky chickpea soup.
+                        </p>
+                        <div class="lunch_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <a href="chickpea.html" class="lunch_btn">show recipie</a>
+                    </div>
+    
+                </div> 
+
+                <div class="lunch_card">
+    
+                    <div class="lunch_image">
+                        <img src="images/potatoes.jpg">
+                    </div>
+    
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+    
+                    <div class="lunch_info">
+                        <h2> roast potatoes </h2>
+                        <p>
+                            On the hunt for the best ever roast potatoes? Try this recipe, which uses a clever coating of a potato-style batter
+                            made with slightly overcooked potatoes…
+                        </p>
+                        <div class="lunch_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <a href="roast potatos.html" class="lunch_btn">show recipie</a>
+                    </div>
+    
+                </div> 
+
+                <div class="lunch_card">
+    
+                    <div class="lunch_image">
+                        <img src="images/Pizza pie.jpg">
+                    </div>
+    
+                    <div class="small_card">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+    
+                    <div class="lunch_info">
+                        <h2> Easy Pizza pie </h2>
+                        <p>
+                            Make a deep-dish Chicago-style pizza pie to serve everyone at once. This is a veggie version, but you can add any fillings you prefer.
+                        </p>
+                        <div class="lunch_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <a href="pizza pie.html" class="lunch_btn">show recipie</a>
+                    </div>
+    
+                </div> 
+
+            </div>
+                
+        </div>
+
+        <div class="footer">
+            <div class="footer">
+                <div class="col-1">
+                    <h2>Ready to cook?</h2>
+                    <p>Sign up for our weekly newsletters!</p>
+                    <a href="LoginPage.html"><button type="button">SiGN UP</button></a>
+                    <p>LET’S BE FRIENDS!</p>
+                    <div class="social-icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-pinterest"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+    
+            <div class="col-2">
+                <h3>RECIPES</h3>
+                <a href="breakfastPage.html">BREAKFAST</a>
+                <a href="LunchPage.html">LUNCH</a>
+                <a href="DinnerPage.html">DINNER</a>
+                <a href="DrinksPage.html">Drinks</a>
+
+            </div>
+    
+            <div class="col-3">
+                <H3>USEFULL LINKS</H3>
+                <a href="AboutUsPage.html">About Us</a>
+                <a href="ContactUsPage.html">Contact</a>
+                <a href="PrivacyPage.html">Privacy Policy</a>
+                <a href="AboutUsPage.html">Terms Of Use</a>
+            </div>
+        </div>
+
+
+
+    </body>
+
+</html>

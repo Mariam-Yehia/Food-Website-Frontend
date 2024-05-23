@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="drinks.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+        <script src="https://kit.fontawesome.com/f84a89f0ab.js" crossorigin="anonymous"></script>
+    
+    
+    </head>
+        <body>
+        
+            <header class="header">
+                                        
+                <nav >
+                    
+                    <a href="HomePage.html" class="logo">
+                        <img src="images/Screenshot (560).png">
+                    </a>
+                    <form>
+                        <input type="search" placeholder="Search Here.." id="search">
+                        <label for="search" class="fas fa-search"></label>
+                    </form>
+        
+                    <div class="icons">
+                        
+                        <a href="LovedPage.html">
+                            <i class="fas fa-heart"></i>
+                        </a>
+                        <div class="shopping">
+                            <i class="fas fa-cart-shopping"></i>
+                            <span class="quantity">0</span>
+        
+                        </div>
+                        <a href="CartPage.html">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        
+                    </div>
+        
+                    
+                </nav>  
+                
+                                                      
+                <nav class="hed2">
+                    <div class="navi"> 
+                        
+                        <ul>
+                            <div class="Menubar">
+                                <a>
+                                    <i class="fa-solid fa-bars"></i>
+                                </a>
+                            </div> 
+                            <li><a href="HomePage.html"> Home </a></li>
+                            <li><a href="RecipesPage.html"> Recipes </a><i class="fa fa-angle-down"></i>
+                                <div class="dropdown">
+                                    <ul>
+                                        <li><a href="breakfastPage.html">Breakfast</a></li>
+                                        <li><a href="LunchPage.html">Lunch</a></li>
+                                        <li><a href="DinnerPage.html">Dinner</a></li>
+                                        <li><a href="DrinksPage.html">Drinks</a></li>
+        
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="ContactUsPage.html"> Contact </a></li>
+                            <li><a href="AboutUsPage.html"> About Us </a></li>
+                            <li><a href="LoginPage.html"> Login </a></li>
+                            <li><a href="OrderPage.html"> Order Now </a></li>
+        
+                        </ul>     
+                    </div>
+                </nav>
+            </header>
+
+            <section id="Home">
+
+                <div class="main">
+    
+                    <div class="main_text">
+                        <h1>Get Fresh<span>Food</span><br>in a Easy Way</h1>
+                    </div>
+        
+                    <div class="main_image">
+                        <img src="images/drinks.jpeg">
+                    </div>
+        
+                </div>
+                <p>
+                    Attention, drinkers, I’ve got something for you! I’ve prepared this page for you simply must check out! 
+                    here you’ll find loads of awesome drinks you can have to blend your feelings XD 
+                </p>
+            </section>
+    
+            <div class="drink" id="drink">
+                <h1>Our<span>drinks</span></h1>
+        
+                <div class="drink_box">
+                    <div class="drink_card">
+        
+                        <div class="drink_image">
+                            <img src="images/hot chocolate.jpg">
+                        </div>
+        
+                        <div class="small_card">
+                            <Button onclick="Toggle1()" id="btnh1" class="btn"><i class="fa-solid fa-heart"></i></Button>
+                        </div>
+                        <script>
+                            var btnvar1 = document.getElementById('btnh1');
+                
+                            function Toggle1(){
+                                    if (btnvar1.style.color =="saddlebrown") {
+                                        btnvar1.style.color = "white"
+                                    }
+                                    else{
+                                        btnvar1.style.color = "saddlebrown"
+                                    }
+                            }
+                
+                        </script>
+        
+                        <div class="drink_info">
+                            <h2> Homemade hot chocolate </h2>
+                            <p>
+                                Indulge in a homemade hot chocolate.
+                                Perfect as the cold nights draw in, you can add a pinch of chilli, cinnamon or a slug of rum if you like
+                            </p>
+                            <div class="drink_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <a href="hot chocolate.html" class="drink_btn">show recipie</a>
+                        </div>
+        
+                    </div>
+    
+                    <div class="drink_card">
+        
+                        <div class="drink_image">
+                            <img src="images/Iced-Caramel.jpg">
+                        </div>
+        
+                        <div class="small_card">
+                            <Button onclick="Toggle2()" id="btnh2" class="btn"><i class="fa-solid fa-heart"></i></Button>
+                        </div>
+                        <script>
+                            var btnvar2 = document.getElementById('btnh2');
+                
+                            function Toggle2(){
+                                    if (btnvar2.style.color =="saddlebrown") {
+                                        btnvar2.style.color = "white"
+                                    }
+                                    else{
+                                        btnvar2.style.color = "saddlebrown"
+                                    }
+                            }
+                
+                        </script>
+        
+                        <div class="drink_info">
+                            <h2> Iced caramel macchiato </h2>
+                            <p>
+                                Take your coffee game up a notch this summer with our iced caramel macchiato 
+                                it’s made with espresso, milk, vanilla syrup and caramel sauce
+                            </p>
+                            <div class="drink_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <a href="caramel.html" class="drink_btn">show recipie</a>
+                        </div>
+        
+                    </div>
+    
+                    <div class="drink_card">
+        
+                        <div class="drink_image">
+                            <img src="images/Blueberry.jpg">
+                        </div>
+        
+                        <div class="small_card">
+                            <Button onclick="Toggle3()" id="btnh3" class="btn"><i class="fa-solid fa-heart"></i></Button>
+                        </div>
+                        <script>
+                            var btnvar3 = document.getElementById('btnh3');
+                
+                            function Toggle3(){
+                                    if (btnvar3.style.color =="saddlebrown") {
+                                        btnvar3.style.color = "white"
+                                    }
+                                    else{
+                                        btnvar3.style.color = "saddlebrown"
+                                    }
+                            }
+                
+                        </script>
+        
+                        <div class="drink_info">
+                            <h2> Blueberry smoothie recipe </h2>
+                            <p>
+                                Make a quick and simple blueberry smoothie with yogurt, banana and apple juice for busy mornings.
+                                You can easily make it vegan by using coconut yogurt
+                            </p>
+                            <div class="drink_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <a href="blueberry.html" class="drink_btn">show recipie</a>
+                        </div>
+        
+                    </div>
+    
+                    <div class="drink_card">
+        
+                        <div class="drink_image">
+                            <img src="images/Watermelon.jpg">
+                        </div>
+        
+                        <div class="small_card">
+                            <Button onclick="Toggle4()" id="btnh4" class="btn"><i class="fa-solid fa-heart"></i></Button>
+                        </div>
+                        <script>
+                            var btnvar4 = document.getElementById('btnh4');
+                
+                            function Toggle4(){
+                                    if (btnvar4.style.color =="saddlebrown") {
+                                        btnvar4.style.color = "white"
+                                    }
+                                    else{
+                                        btnvar4.style.color = "saddlebrown"
+                                    }
+                            }
+                
+                        </script>
+        
+                        <div class="drink_info">
+                            <h2> Watermelon smoothie </h2>
+                            <p>
+                                Enjoy a watermelon smoothie on a warm summer’s day.
+                                Blended with banana and apple juice, this drink is packed with vitamin C
+                            </p>
+                            <div class="drink_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <a href="watermelon.html" class="drink_btn">show recipie</a>
+                        </div>
+        
+                    </div>
+    
+                    <div class="drink_card">
+        
+                        <div class="drink_image">
+                            <img src="images/Soy-Sauce.jpg">
+                        </div>
+        
+                        <div class="small_card">
+                            <Button onclick="Toggle5()" id="btnh5" class="btn"><i class="fa-solid fa-heart"></i></Button>
+                        </div>
+                        <script>
+                            var btnvar5 = document.getElementById('btnh5');
+                
+                            function Toggle5(){
+                                    if (btnvar5.style.color =="saddlebrown") {
+                                        btnvar5.style.color = "white"
+                                    }
+                                    else{
+                                        btnvar5.style.color = "saddlebrown"
+                                    }
+                            }
+                
+                        </script>
+        
+                        <div class="drink_info">
+                            <h2> Soy sauce caramel milkshake </h2>
+                            <p>
+                                Add a little soy sauce to a caramel milkshake for a savoury, salty edge.
+                                The flavour profile is less sweet overall, making it a perfect milkshake for grown-ups!
+                            </p>
+                            <div class="drink_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <a href="soy.html" class="drink_btn">show recipie</a>
+                        </div>
+        
+                    </div>
+    
+                    <div class="drink_card">
+        
+                        <div class="drink_image">
+                            <img src="images/Pineapple.jpg">
+                        </div>
+        
+                        <div class="small_card">
+                            <Button onclick="Toggle6()" id="btnh6" class="btn"><i class="fa-solid fa-heart"></i></Button>
+                        </div>
+                        <script>
+                            var btnvar6 = document.getElementById('btnh6');
+                
+                            function Toggle6(){
+                                    if (btnvar6.style.color =="saddlebrown") {
+                                        btnvar6.style.color = "white"
+                                    }
+                                    else{
+                                        btnvar6.style.color = "saddlebrown"
+                                    }
+                            }
+                
+                        </script>
+        
+                        <div class="drink_info">
+                            <h2> Pineapple smoothie </h2>
+                            <p>
+                                Blend fresh pineapple and banana with lime juice to make this tangy pineapple smoothie.
+                                It’s great for breakfast and kids will love it too
+                            </p>
+                            <div class="drink_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <a href="pinapple.html" class="drink_btn">show recipie</a>
+                        </div>
+        
+                    </div>
+    
+                    <div class="drink_card">
+        
+                        <div class="drink_image">
+                            <img src="images/lemon-and-ginger.jpg">
+                        </div>
+        
+                        <div class="small_card">
+                            <Button onclick="Toggle7()" id="btnh7" class="btn"><i class="fa-solid fa-heart"></i></Button>
+                        </div>
+                        <script>
+                            var btnvar7 = document.getElementById('btnh7');
+                
+                            function Toggle7(){
+                                    if (btnvar7.style.color =="saddlebrown") {
+                                        btnvar7.style.color = "white"
+                                    }
+                                    else{
+                                        btnvar7.style.color = "saddlebrown"
+                                    }
+                            }
+                
+                        </script>
+        
+                        <div class="drink_info">
+                            <h2> Lemon & ginger tea </h2>
+                            <p>
+                                Combine lemon with root ginger to make this refreshing lemon and ginger tea that's a
+                                great alternative to caffeinated drinks.Sweeten with honey if you like
+                            </p>
+                            <div class="drink_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <a href="lemon.html" class="drink_btn">show recipie</a>
+                        </div>
+        
+                    </div>
+    
+                    <div class="drink_card">
+        
+                        <div class="drink_image">
+                            <img src="images/Peanut.jpg">
+                        </div>
+        
+                        <div class="small_card">
+                            <Button onclick="Toggle8()" id="btnh8" class="btn"><i class="fa-solid fa-heart"></i></Button>
+                        </div>
+                        <script>
+                            var btnvar8 = document.getElementById('btnh8');
+                
+                            function Toggle8(){
+                                    if (btnvar8.style.color =="saddlebrown") {
+                                        btnvar8.style.color = "white"
+                                    }
+                                    else{
+                                        btnvar8.style.color = "saddlebrown"
+                                    }
+                            }
+                
+                        </script>
+        
+                        <div class="drink_info">
+                            <h2> Peanut butter smoothie </h2>
+                            <p>
+                                Whizz up a quick and filling peanut butter smoothie, with rolled oats and banana.
+                                Brilliant for breakfast, you can freeze the banana for extra thickness
+                            </p>
+                            <div class="drink_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <a href="peanut butter.html" class="drink_btn">show recipie</a>
+                        </div>
+        
+                    </div>
+    
+                    <div class="drink_card">
+        
+                        <div class="drink_image">
+                            <img src="images/choc.jpg">
+                        </div>
+        
+                        <div class="small_card">
+                            <Button onclick="Toggle9()" id="btnh9" class="btn"><i class="fa-solid fa-heart"></i></Button>
+                        </div>
+                        <script>
+                            var btnvar9 = document.getElementById('btnh9');
+                
+                            function Toggle9(){
+                                    if (btnvar9.style.color =="saddlebrown") {
+                                        btnvar9.style.color = "white"
+                                    }
+                                    else{
+                                        btnvar9.style.color = "saddlebrown"
+                                    }
+                            }
+                
+                        </script>
+        
+                        <div class="drink_info">
+                            <h2>Choc & ginger dippers </h2>
+                            <p>
+                                Have some leftover gingerbread dough? Bake it into biscuit fingers for dunking into hot drinks after a meal
+                            </p>
+                            <div class="drink_icon">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <a href="choc.html" class="drink_btn">show recipie</a>
+                        </div>
+        
+                    </div>
+    
+                </div>
+    
+            </div>
+
+            <div class="footer">
+                <div class="footer">
+                    <div class="col-1">
+                        <h2>Ready to cook?</h2>
+                        <p>Sign up for our weekly newsletters!</p>
+                        <a href="LoginPage.html"><button type="button">SiGN UP</button></a>
+                        <p>LET’S BE FRIENDS!</p>
+                        <div class="social-icons">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-pinterest"></i>
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
+        
+                <div class="col-2">
+                    <h3>RECIPES</h3>
+                    <a href="breakfastPage.html">BREAKFAST</a>
+                    <a href="LunchPage.html">LUNCH</a>
+                    <a href="DinnerPage.html">DINNER</a>
+                    <a href="DrinksPage.html">Drinks</a>
+
+                </div>
+        
+                <div class="col-3">
+                    <H3>USEFULL LINKS</H3>
+                    <a href="AboutUsPage.html">About Us</a>
+                    <a href="ContactUsPage.html">Contact</a>
+                    <a href="PrivacyPage.html">Privacy Policy</a>
+                    <a href="AboutUsPage.html">Terms Of Use</a>
+                </div>
+            </div>
+    
+</body>
+</html>

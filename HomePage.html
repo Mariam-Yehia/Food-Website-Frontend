@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <script src="https://kit.fontawesome.com/f84a89f0ab.js" crossorigin="anonymous"></script>
+    <!--bootstrap grid system-->
+    
+</head>
+
+<body>
+     
+        <header class="header">
+            <nav class="hed1">
+                
+                <a href="HomePage.html" class="logo">
+                    <img src="images/Screenshot (560).png">
+                </a>
+                <form>
+                    <input type="search" placeholder="Search Here.." id="search">
+                    <label for="search" class="fas fa-search"></label>
+                </form>
+
+                <div class="icons">
+                    
+                    <a href="LovedPage.html">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                    <a href="CartPage.html">
+                        <i class="fas fa-cart-shopping"></i>
+                    </a>
+                    <a>
+                        <i class="fa-solid fa-user" onclick="toggleMenu()"></i>
+                    </a>
+                </div>
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="images/user.png">
+                            <h3>hi <%= name %></h3>
+                        </div>
+                        <hr>
+
+                        <a href="#" class="sub-menu-link">
+                            <img src="images/profile.png">
+                            <p>Edit Profile</p><i class="fa fa-angle-right"></i>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="images/setting.png">
+                            <p>Settings & Privacy</p><i class="fa fa-angle-right"></i>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="images/help.png">
+                            <p>Help & Suppprt</p><i class="fa fa-angle-right"></i>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="images/logout.png">
+                            <form action="/logout?_method=DELETE" method="POST">
+                                <button type="submit">Logout</button><i class="fa fa-angle-right"></i>
+                            </form>
+                        </a>
+
+                    </div>
+                </div>
+
+            </nav>
+            <nav class="hed2">
+                <nav class="navi"> 
+                     
+                    <ul>
+                        <div class="Menubar">
+                            <a>
+                                <i class="fa-solid fa-bars"></i>
+                            </a>
+                        </div> 
+                        <li><a href="HomePage.html"> Home </a></li>
+                        <li><a href="RecipesPage.html"> Recipes </a><i class="fa fa-angle-down"></i>
+                            <div class="dropdown">
+                                <ul>
+                                    <li><a href="breakfastPage.html">Breakfast</a></li>
+                                    <li><a href="LunchPage.html">Lunch</a></li>
+                                    <li><a href="DinnerPage.html">Dinner</a></li>
+                                    <li><a href="DrinksPage.html">Drinks</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="ContactUsPage.html"> Contact </a></li>
+                        <li><a href="AboutUsPage.html"> About Us </a></li>
+                        <li><a href="LoginPage.html"> Login </a></li>
+                        <li><a href="OrderPage.html"> Order Now </a></li>
+      
+                    </ul>     
+                </nav>
+            </nav>
+        </header>
+
+        <section>
+            <div class="hero-section">
+                <div class="hero-text">
+                    <h1>Thinking of what to cook?</h1>
+                    <p>Find the best recipes at a click of button</p>
+                    <a href="RecipesPage.html" class="button margin-top">EXPLORE</a>
+                </div>
+            </div>
+            
+        </section>
+        <section class="items"> 
+            <div class="recipe-section">
+                <div class="container1">
+                    <div class="row">
+                        
+                        <div class="col-md-4">
+                            <div class="image-wrapper">
+                                <a href="breakfastPage.html"><img src="images/second.jpg"></a>
+                                <div class="image-wrapper-text">
+                                    <h5>Breakfast</h5>
+                                    <p>Easy Toast recipes for Breakfast</p>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <div class="col-md-4">
+                            <div class="image-wrapper">
+                                <a href="LunchPage.html"><img src="images/first.jpg"></a>
+                                <div class="image-wrapper-text">
+                                    <h5>Lunch</h5>
+                                    <p>Quick & Healthy Lunch Ideas for the Week</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="image-wrapper">
+                                <a href="DinnerPage.html"><img src="images/third.jpg"></a>
+                                <div class="image-wrapper-text">
+                                    <h5>Dinner</h5>
+                                    <p>Quick & Easy Dinner Party recipes Ideas</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="image-wrapper">
+                                <a href="DrinksPage.html"><img src="images/bg.jpg"></a>
+                                <div class="image-wrapper-text">
+                                    <h5>Drinks</h5>
+                                    <p>Quick & Easy Drinks for all week</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>  
+        
+                </div>
+            </div>
+        </section>
+            
+    
+    
+
+    <div class="footer">
+        <div class="footer">
+            <div class="col-1">
+                <img src="images/Screenshot (560).png">
+                <h2>Ready to cook?</h2>
+                <p>Sign up for our weekly newsletters!</p>
+                <a href="LoginPage.html"><button type="button">SiGN UP</button></a>
+                <p>LET’S BE FRIENDS!</p>
+                <div class="social-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+
+        <div class="col-2">
+            <h3>RECIPES</h3>
+            <a href="breakfastPage.html">BREAKFAST</a>
+            <a href="LunchPage.html">LUNCH</a>
+            <a href="DinnerPage.html">DINNER</a>
+            <a href="DrinksPage.html">Drinks</a>
+
+        </div>
+
+        <div class="col-3">
+            <H3>USEFULL LINKS</H3>
+            <a href="AboutUsPage.html">About Us</a>
+            <a href="ContactUsPage.html">Contact</a>
+            <a href="PrivacyPage.html">Privacy Policy</a>
+            <a href="AboutUsPage.html">Terms Of Use</a>
+        </div>
+    </div>
+
+    <script>
+        let subMenu = document.getElementById("subMenu");
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+
+        }
+    </script>
+</body>
+</html>

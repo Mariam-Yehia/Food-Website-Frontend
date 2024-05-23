@@ -1,0 +1,480 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+	scroll-behavior: smooth; 
+
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: rgba(248, 238, 181, 0.877);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+header nav .navi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    margin-top: 244px;
+    right: 0;
+    left: 0;
+    background: white;
+    z-index: 1000;
+}
+
+nav .logo{
+	width: 70px;
+	height: 110px;
+	display: flex;
+	
+}
+.header nav form{
+	margin-left: 20px;
+	display: flex;
+}
+.header nav form #search{
+	height: 40px;
+	width: 500px;
+	background:#fff;
+	outline: none;
+	display: flex;
+	border-radius: 60px;
+	border-color: transparent;
+	color: #41a11b;
+	padding: 0 20px;
+	
+}
+header nav form label{
+	height: 60px;
+	width: 40px;
+	background:transparent;
+	color: #000000;
+	cursor: pointer;
+	line-height: 40px;
+    margin-top: 10px;
+	text-align: center;
+}
+header nav form label:hover{
+	color: #41a11be7;
+
+}
+@media (max-width:991px) {
+	.header .hed1 form #search{
+		width: 100%;
+	}	
+}
+
+header nav .icons{
+    display: flex;  
+}
+
+header nav .icons a{
+	font-size: 17px;
+	color: #000000;
+	margin: 5px;
+	text-decoration:none;
+}
+header nav .icons a:hover{
+	color: #41a11b;
+
+}
+header nav .icons .shopping{
+	font-size: 17px;
+	color: #000000;
+	margin: 5px;
+	text-decoration:none;
+    cursor: pointer;
+}
+header nav .icons .shopping:hover{
+	color: #41a11b;
+
+}
+
+/*cart*/
+
+section .List{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+section .card{
+    position: fixed;
+    top: 120px;
+    left: 100%;
+    width: 500px;
+    background-color: #cccccc;
+    height: 100vh;
+    transition: 0.5s;
+}
+
+section .card h1{
+    color: #41a11b;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+section .card .checkOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+section .card .checkOut div{
+    background-color: #fff;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+section .card .checkOut div:nth-child(2){
+    background-color: #41a11b;
+    color: #fff;
+}
+
+.active section .card{
+    left: calc(100% - 500px);
+}
+
+.active section .container{
+    transform: translateX(-200px);
+}
+
+
+
+
+
+
+header nav .navi .Menubar{
+	display: inline-block;
+	margin-right: 260px;
+	cursor: pointer;
+}
+
+header nav .navi ul{
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+	list-style: none;
+}
+header nav .navi ul li{
+	margin: 10px;
+}
+header nav .navi ul li a{
+	color: #000000;
+    text-decoration:none;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 30px;
+	justify-content: center;
+}
+header nav .navi ul li a:hover{
+	color: #41a11b;
+}
+/*dropdown*/
+.dropdown{
+	display: none;
+	
+}
+header nav .navi ul li:hover .dropdown{
+	display: block;
+	position: absolute;
+	background: #fff;
+	margin-left: -15px;
+}
+.header .hed2 .navi ul li:hover .dropdown ul{
+	display: block;
+	margin: 10px;
+}
+.header .hed2 .navi ul li:hover .dropdown ul li{
+	width: 150px;
+}
+	
+/*end of dropdown*/
+/*end of header*/
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    width: 100%;
+    height: 65vh;
+}
+
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 130px;
+}
+
+section .main .main_text h1{
+    font-size: 70px;
+    position: relative;
+    top: -70px;
+    left: 20px;
+}
+
+section .main .main_text h1 span{
+    margin-left: 15px;
+    color:rgba(190, 135, 63, 0.726);
+    font-family: mv boli;
+    line-height: 22px;
+    font-size: 70px;
+}
+
+section .main .main_image img{
+    width: 600px;
+    position: relative;
+    left: 70px;
+}
+
+section p{
+    width: 650px;
+    text-align: justify;
+    position: relative;
+    left: 90px;
+    bottom:20px;
+    line-height: 22px;
+}
+
+.breakfast{
+    width: 100%;
+    padding: 100px 0;
+    margin-top: 60px;
+}
+
+.breakfast h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.breakfast h1 span{
+    color:rgba(190, 135, 63, 0.726);
+    margin-left: 15px;
+    font-family: mv boli;
+}
+
+.breakfast h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background:rgba(190, 135, 63, 0.726);
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.breakfast .breakfast_box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.breakfast .breakfast_box .breakfast_card{
+    width: 400px;
+    height: 550px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.breakfast .breakfast_box .breakfast_card .breakfast_image{
+    width: 350px;
+    height: 325px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.breakfast .breakfast_box .breakfast_card .breakfast_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.breakfast .breakfast_box .breakfast_card .breakfast_image:hover img{
+    transform: scale(1.1);
+}
+
+.breakfast .breakfast_box .breakfast_card .small_card{
+    width: 45px;
+    height: 45px;
+    float: right;
+    position: relative;
+    top: -240px;
+    right: -8px;
+    opacity: 0;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.breakfast .breakfast_box .breakfast_card:hover .small_card{
+    position: relative;
+    top: -310px;
+    right: 20px;
+    opacity: 1;
+}
+
+.breakfast .breakfast_box .breakfast_card .small_card i{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    cursor: pointer;
+    text-shadow: 0 0 6px #000;
+    transition: 0.2s;
+}
+
+
+
+.breakfast .breakfast_box .breakfast_card .breakfast_info h2{
+    width: 60%;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 25px;
+    color:rgba(190, 135, 63, 0.726);
+}
+
+.breakfast .breakfast_box .breakfast_card .breakfast_info li{
+    width: 200px;
+    float: left;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    display: table;
+    padding: 4px 0;
+}
+
+.breakfast .breakfast_box .breakfast_card .breakfast_info p{
+    text-align: center;
+    margin-top: 8px;
+    line-height: 21px;
+}
+
+.breakfast .breakfast_box .breakfast_card .breakfast_info h3{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.breakfast .breakfast_box .breakfast_card .breakfast_info .breakfast_icon{
+    color:rgba(190, 135, 63, 0.726);
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.breakfast .breakfast_box .breakfast_card .breakfast_info .breakfast_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background: #000;
+    padding: 8px 10px;
+    margin: 0 80px;
+    transition: 0.3s;
+}
+/*heart*/
+.breakfast .breakfast_box .breakfast_card .small_card .btn{
+    background: transparent;
+    border: none;
+    margin: 0;
+    font-size: 88px;
+    outline: none;
+    color: white;
+}
+.breakfast .breakfast_box .breakfast_card .small_card .btn{
+    border: none;
+    outline: none;
+}
+
+.breakfast .breakfast_box .breakfast_card .small_card .btn i:hover{
+    cursor: pointer;
+}
+/*end of heart*/
+/*end of breakfask page*/
+
+.footer{
+	margin-top: 130px;
+	width: 100%;
+	padding: 70px 10%;
+	background-color:rgba(248, 238, 181, 0.877);
+	display: flex;
+}
+.footer div{
+	text-align: center;
+}
+.col-2{
+	flex-grow: 3;
+}
+.footer div h3{
+	font-weight: 300;
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+}
+.col-2 a{
+	display: block;
+	text-decoration: none;
+	color: rgb(73, 73, 73);
+	margin-bottom: 10px;
+}
+.col-3 a{
+	display: block;
+	text-decoration: none;
+	color: rgb(73, 73, 73);
+	margin-bottom: 10px;
+}
+.col-1 p{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.col-1 button{
+	background: transparent;
+	border: 2px solid #fff;
+	color: rgb(73, 73, 73);
+	border-radius: 30px;
+	padding: 10px 30px;
+	margin: 10px;
+	font-size: 15px;
+	cursor: pointer;
+}
+.social-icons{
+	margin-top: 30px;
+}
+.social-icons i{
+	font-size: 22px;
+	margin: 10px;
+	cursor: pointer;
+}
+/*end of footer*/

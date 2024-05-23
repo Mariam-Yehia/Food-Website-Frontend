@@ -1,0 +1,66 @@
+<html>
+    <head>
+
+        <link rel="stylesheet" href="LoginPage.css">
+        <script src="https://kit.fontawesome.com/f84a89f0ab.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        
+    <div class="wrapper">
+        <div class="form-box login">
+            <h2> Login </h2>
+            <form action="HomePage.html" method="post" >
+                <div class="input-box" >
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" id="email" required name="email">
+                    <label> Email </label>
+                </div>
+                <div class="input-box" >
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>  
+                    </span>
+                    <input type="password" id="password" required name="password">
+                    <label> Password </label>
+                </div>
+                <div class="remember-forgot">
+                    <label> <input type="checkbox">Remember me</label>
+                    <a href="#"> Forgot password?</a>
+                </div>
+                <button type="submit" class="btn" onclick="login()">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account ? <a href="SignUp.html"
+                    class="register-link"> Register </a></p>
+                </div>
+            </form>
+        </div>
+
+        
+    </div>
+
+    <script>
+        // Function to handle the login button click
+        function login() {
+        // Get the input values from the form
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        // Get the user object from local storage
+        var storedUser = localStorage.getItem("user");
+        var user = JSON.parse(storedUser);
+
+        // Check if the email and password match the stored values
+        if (email === user.email && password === user.password) {
+            alert("Login successful!");
+        } else {
+            alert("Incorrect email or password.");
+        }
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    </body>
+</html>

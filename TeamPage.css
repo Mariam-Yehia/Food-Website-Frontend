@@ -1,0 +1,299 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color:blanchedalmond;
+}
+header nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  left: 0;
+  background: rgba(248, 238, 181, 0.877);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+
+header nav .navi{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  margin-top: 244px;
+  right: 0;
+  left: 0;
+  background: white;
+  z-index: 1000;
+}
+
+nav .logo{
+width: 70px;
+height: 110px;
+display: flex;
+
+}
+.header nav form{
+margin-left: 20px;
+display: flex;
+}
+.header nav form #search{
+height: 40px;
+width: 500px;
+background:#fff;
+outline: none;
+display: flex;
+border-radius: 60px;
+border-color: transparent;
+color: #41a11b;
+padding: 0 20px;
+
+}
+header nav form label{
+height: 60px;
+width: 40px;
+background:transparent;
+color: #000000;
+cursor: pointer;
+line-height: 40px;
+text-align: center;
+}
+header nav form label:hover{
+color: #41a11be7;
+
+}
+@media (max-width:991px) {
+.header .hed1 form #search{
+  width: 100%;
+}	
+}
+header nav .icons a{
+font-size: 20px;
+color: #000000;
+margin: 15px;
+text-decoration:none;
+}
+header nav .icons a:hover{
+color: #41a11b;
+
+}
+
+
+header nav .navi .Menubar{
+display: inline-block;
+margin-right: 260px;
+cursor: pointer;
+
+}
+header nav .navi ul{
+display: inline-flex;
+align-items: center;
+justify-content: space-between;
+list-style: none;
+}
+header nav .navi ul li{
+margin: 10px;
+}
+header nav .navi ul li a{
+color: #000000;
+  text-decoration:none;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-left: 30px;
+justify-content: center;
+}
+header nav .navi ul li a:hover{
+color: #41a11b;
+}
+/*dropdown*/
+.dropdown{
+display: none;
+
+}
+header nav .navi ul li:hover .dropdown{
+display: block;
+position: absolute;
+background: #fff;
+margin-left: -15px;
+}
+.header .hed2 .navi ul li:hover .dropdown ul{
+display: block;
+margin: 10px;
+}
+.header .hed2 .navi ul li:hover .dropdown ul li{
+width: 150px;
+}
+
+/*end of dropdown*/
+/*end of header*/
+
+
+/*Team*/
+
+.team{
+  width: 100%;
+  height: 90vh;
+  background-image: url(image/bg1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.team h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 55px;
+  margin-bottom: 30px;
+}
+
+.team h1 span{
+  color: #fac031;
+  margin-left: 15px;
+  font-family: mv boli;
+}
+
+.team h1 span::after{
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #fac031;
+  display: block;
+  position: relative;
+  bottom: 15px;
+}
+
+.team .team_box{
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 13%;
+}
+
+.team .team_box .profile{
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
+  transition: 0.4s;
+}
+
+.team .team_box .profile:hover{
+  border-radius: 20px;
+  height: 320px;
+}
+
+.team .team_box .profile img{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
+  z-index: 2;
+  transition: 0.4s;
+}
+
+.team .team_box .profile:hover img{
+  border-radius: 20px;
+  margin-top: -230px;
+}
+
+.team .team_box .profile .info{
+  position: absolute;
+  text-align: center;
+  top: 25%;
+  transition: 0.4s;
+}
+
+.team .team_box .profile:hover .info{
+  top: 60%;
+}
+
+.team .team_box .profile .info .name{
+  color: #fac031;
+  margin-bottom: 15px;
+}
+
+.team .team_box .profile .info .bio{
+  width: 70%;
+  text-align: center;
+  margin: 0 auto 10px auto;
+}
+
+.team .team_box .profile .info .team_icon i{
+  margin: 10px 5px 5px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.team .team_box .profile .info .team_icon i:hover{
+  color: #fac031;
+}
+
+.footer{
+	margin-top: 130px;
+	width: 100%;
+	padding: 70px 10%;
+	background-color:rgba(248, 238, 181, 0.877);
+	display: flex;
+}
+.footer div{
+	text-align: center;
+}
+.col-2{
+	flex-grow: 3;
+}
+.footer div h3{
+	font-weight: 300;
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+}
+.col-2 a{
+	display: block;
+	text-decoration: none;
+	color: rgb(73, 73, 73);
+	margin-bottom: 10px;
+}
+.col-3 a{
+	display: block;
+	text-decoration: none;
+	color: rgb(73, 73, 73);
+	margin-bottom: 10px;
+}
+.col-1 p{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.col-1 button{
+	background: transparent;
+	border: 2px solid #fff;
+	color: rgb(73, 73, 73);
+	border-radius: 30px;
+	padding: 10px 30px;
+	margin: 10px;
+	font-size: 15px;
+	cursor: pointer;
+}
+.social-icons{
+	margin-top: 30px;
+}
+.social-icons i{
+	font-size: 22px;
+	margin: 10px;
+	cursor: pointer;
+}
